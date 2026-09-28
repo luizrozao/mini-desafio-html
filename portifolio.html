@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luiz Rozão - Desenvolvedor Web</title>
+
+    <style>
+        body {
+            background-color: #f0eef8;
+            margin: 8px;
+            color: #111;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        h1 {
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 25px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #aaa;
+        }
+
+        /* Imagem exatamente 150x150 */
+        .foto-perfil {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #555;
+            padding: 10px;
+        }
+
+        th {
+            text-align: center;
+        }
+
+        fieldset {
+            margin-top: 25px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 165px;
+            height: 20px;
+        }
+
+        select {
+            width: 180px;
+            height: 22px;
+        }
+
+        textarea {
+            width: 165px;
+            height: 80px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 3px;
+        }
+
+        button {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+
+        <h1>Luiz Rozão - Desenvolvedor Web</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <!-- SEÇÃO SOBRE -->
+    <main>
+
+        <section id="sobre">
+
+            <h2>Sobre Mim</h2>
+
+            <img
+                src="imagen.zuckerberg/WIN_20260928_15_26_17_Pro.jpg"
+                alt="Foto de Luiz Rozão"
+                class="foto-perfil"
+            >
+
+            <p>
+                Sou estudante de
+                <strong>Desenvolvimento de Sistemas</strong>
+                no SENAI.
+            </p>
+
+            <p>
+                Tenho conhecimento em
+                <em>HTML</em>,
+                <em>CSS</em>
+                e estou aprendendo
+                <em>JavaScript</em>.
+            </p>
+
+            <h3>Minhas Habilidades:</h3>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>GitHub</li>
+            </ul>
+
+        </section>
+
+        <hr>
+
+        <!-- SEÇÃO PROJETOS -->
+        <section id="projetos">
+
+            <h2>Meus Projetos</h2>
+
+            <table>
+
+                <!-- Cabeçalho da tabela -->
+                <thead>
+                    <tr>
+                        <th>Projeto</th>
+                        <th>Tecnologias</th>
+                        <th>Status</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+
+                <!-- Corpo da tabela -->
+                <tbody>
+
+                    <tr>
+                        <td>GameZone</td>
+                        <td>HTML, CSS</td>
+                        <td>Concluído</td>
+                        <td>
+                            <a href="https://github.com/luizrozao/GameZone">Ver<br>Projeto</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Projeto Filme</td>
+                        <td>HTML<br>JavaScript</td>
+                        <td>Concluído</td>
+                        <td>
+                            <a href="https://github.com/luizrozao/projeto-filme">Ver<br>Projeto</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Algoritimos lógica</td>
+                        <td>HTML, CSS,<br>JavaScript</td>
+                        <td>Concluído</td>
+                        <td>
+                            <a href="https://github.com/luizrozao/algoritimos-logica-exemplos">Ver<br>Projeto</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <hr>
+
+        <!-- SEÇÃO CONTATO -->
+        <section id="contato">
+
+            <h2>Entre em Contato</h2>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Dados do Contato</legend>
+
+                    <label for="nome">Nome:</label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                    >
+
+                    <label for="email">Email:</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                    >
+
+                    <label for="assunto">Assunto:</label>
+
+                    <select id="assunto" name="assunto">
+
+                        <option>Oportunidade de Trabalho</option>
+                        <option>Dúvida</option>
+                        <option>Projeto</option>
+                        <option>Outro</option>
+
+                    </select>
+
+                    <label for="mensagem">Mensagem:</label>
+
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                    ></textarea>
+
+                    <br>
+
+                    <button type="submit">
+                        Enviar Mensagem
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <p>
+            &copy; 2026 Meta. Desenvolvido durante o curso do SENAI.
+        </p>
+
+        <hr>
+
+        <p>
+            <a href="mailto:lhrbarati@gmail.com">
+                lhrbarati@gmail.com
+            </a>
+
+            |
+
+            <a href="tel:+5511999907195">
+                (11) 99990-7195
+            </a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
